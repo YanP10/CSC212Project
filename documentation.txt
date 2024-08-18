@@ -1,0 +1,58 @@
+The documentation file will hold your program's must-know information. It should include descriptions of the:
+
+- data structure or algorithm
+ *breath first search data structure
+  *multiple methods used to develope a graph from a 2d vector
+ *Flood Fill
+  *Determines adjeacent nodes
+ *Disjoint-Set Data structure
+  *creates a simple graph, removing duplicate edges
+ *Prims algorithm
+  *Determines a minimum spanning tree from a graph 
+  *MST represents the route
+ *Bucket Sort
+  *sorts nodes alphabetically
+
+- microcosm 
+A delivery driver is looking for a way to determine the best route for a given map of their vicinity, containing the houses that are waiting on packages.
+To solve this, our program determines the best fit using a combination of BFS and Prims algorithm, determing the shortest path from any given house to start.
+With this route setting program, the driver is able to efficiently deliver the packages to each house.
+
+- program's functionality
+ *read file
+ *store characters as 2d vector (map)
+ *based on requested user input, print different modes
+ *1
+  *pass the map into BFS
+  *create an adjacency list to represent a graph
+  *print all connections
+ *2
+  *print any connections based on user input for requested node, or house
+ *3
+  *pass the graph into a disjoint set method
+  *determine if there are any duplicate connections to nodes
+  *print the unionized simple graph
+ *4
+  *pass the graph into prims algorithm
+  *use prims to determine MST
+  *print all connections in the MST
+  *print the total weight of the tree
+
+- program's usage instructions
+ *to run initially, pass a txt file containing a makeshift map
+ *The program will then ask for your desired form of output
+ *enter an integer 1-4
+ *if you enter 2 or 3, you will then be prompted for a letter
+ *enter any letter aA-zZ
+ *the program prints your request, and terminates
+
+- program's dependencies
+*the program requires a .txt file the matches a specific format in order to run properly
+*the map must be an NXN square.
+*diagonals must be representes as '.', straight roads as '|', and houses as uppercase letters.
+*the amount of houses is limited by the 26 letters in the english alphabet.
+*the program requires proper user input when requesting a form of output.
+
+- program's installation instructions
+Program can be installed and run through a c++ compiler, to find a route connecting all houses on a map.
+
